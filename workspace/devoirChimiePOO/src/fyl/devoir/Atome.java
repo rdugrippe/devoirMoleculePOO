@@ -14,31 +14,6 @@ public class Atome implements Comparable<Object>{
 
 	
 
-	@Override
-	public int compareTo(Object o) {  
-        if (o instanceof Atome) {  
-        	Atome a = (Atome) o;
-            if(this.equals(o))
-            	return 0;
-            else
-            	return this.masse - a.masse;
-        }  
-        throw new ClassCastException("\nCannot compare Atome with "  
-                + o.getClass().getName());  
-    }
-
-	//getters
-	public String getNom() {
-		return nom;
-	}
-
-	public String getSymbole() {
-		return symbole;
-	}
-
-	public int getMasse() {
-		return masse;
-	}
 
 	@Override
 	public String toString() {
