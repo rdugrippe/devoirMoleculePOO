@@ -12,13 +12,7 @@ public class Atome implements Comparable<Object>{
 		this.masse = masse;
 	}
 
-	@Override
-	public boolean equals(Object o){
-		if(!(o instanceof Atome))
-			return false;
-		Atome a = (Atome)o;
-		return a.masse == this.masse;
-	} 
+	
 
 	@Override
 	public int compareTo(Object o) {  
